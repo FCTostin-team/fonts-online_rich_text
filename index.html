@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Factorio Font КОД-ГЕНЕРАТОР</title>
+  <meta name="viewport" content="width=600, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="factorio-window">
+    <div class="factorio-header">
+      <span id="header-title">Генератор [font] кода</span>
+      <span class="factorio-by" id="header-by">By FCTteam</span>
+      <div class="lang-select-container">
+        <select id="lang-select" class="lang-dropdown" aria-label="Выбор языка">
+          <option value="ru">Русский</option>
+          <option value="en">English</option>
+          <option value="uk">Українська</option>
+          <option value="kk">Қазақша</option>
+          <option value="cs">Čeština</option>
+          <option value="nl">Nederlands</option>
+          <option value="sv">Svenska</option>
+          <option value="de">Deutsch</option>
+          <option value="pl">Polski</option>
+          <option value="fr">Français</option>
+          <option value="zh">中文</option>
+          <option value="ja">日本語</option>
+        </select>
+      </div>
+    </div>
+    <div class="factorio-content">
+      <label class="factorio-label" for="text-input" id="label-text">Текст:</label>
+      <textarea id="text-input" maxlength="130" placeholder="Введите ваш текст...">Пример текста</textarea>
+      <div class="factorio-row-center">
+        <div class="factorio-col">
+          <label id="label-font">Шрифт:</label>
+          <div class="font-select-dropdown" id="font-select-dropdown">
+            <button type="button" class="font-select-btn" id="font-select-btn" aria-haspopup="true" aria-expanded="false">
+              <span id="font-btn-label">default-bold</span>
+              <span class="font-select-arrow">&#9662;</span>
+            </button>
+            <div class="font-dropdown-list" id="font-dropdown-list" role="listbox">
+              </div>
+          </div>
+        </div>
+        <div class="factorio-col">
+          <label for="color-input" id="label-color">Цвет:</label>
+          <input type="color" id="color-input" class="color-input" value="#e04b4b">
+          <span class="hex-label" id="hex-value">#e04b4b</span>
+        </div>
+      </div>
+      <div class="factorio-title-block" id="code-title">Получившейся код:</div>
+      <div class="code-output-container" id="code-visual">
+        <span class="code-brackets" id="code-brackets-start">[color=#e04b4b][font=var]</span>
+        <span class="code-maintext" id="code-maintext" style="color:#e04b4b;">Пример текста</span>
+        <span class="code-end" id="code-brackets-end">[/font][/color]</span>
+      </div>
+      <span class="code-length" id="code-length">54 / 155</span>
+      <button class="copy-btn" id="copy-btn">
+        <span id="copy-btn-txt">Скопировать</span>
+        <span class="copy-flyout" id="copy-flyout">Скопировано!</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>🐞 <a href="https://www.youtube.com/@FCT-Ostin" target="_blank">YouTube</a></p>
+    <p>💙 <a href="https://t.me/FCTostin" target="_blank">Telegram</a></p>
+    <p>🎮 <a href="https://steamcommunity.com/groups/FCTgroup" target="_blank">Steam Group</a></p>
+    <p>🕹 <a href="https://www.patreon.com/c/OstinFCT" target="_blank">Patreon</a></p>
+    <p>🪐 <a href="https://boosty.to/ostinfct" target="_blank">Boosty</a></p>
+    <p>Создано при поддержке Телеграм сообщества FCTostin</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
