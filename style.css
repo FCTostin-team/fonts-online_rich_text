@@ -61,56 +61,66 @@ body {
   letter-spacing: 0.2px;
   font-family: inherit;
 }
-.lang-select-container {
+.lang-switcher {
   position: fixed;
-  top: 15px;
-  right: 22px;
-  z-index: 100;
-  background: none;
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 7px;
+  top: 14px;
+  right: 20px;
+  z-index: 120;
 }
-@media (max-width: 700px) {
-  .lang-select-container {
-    right: 8px;
-    top: 8px;
-  }
+.lang-toggle {
+  border: 1.5px solid #82704c;
+  border-radius: 6px;
+  background: #f0d9b5;
+  color: #3c2d18;
+  font-size: 0.95em;
+  font-family: inherit;
+  padding: 7px 12px;
+  min-width: 116px;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 1px 3px #0002;
 }
-@media (max-width: 600px) {
-  .lang-select-container {
-    right: 2vw;
-    top: 5px;
-  }
+.lang-toggle:focus {
+  border-color: var(--select-focus);
+  outline: none;
+}
+.lang-popup {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: #2a261c;
+  border: 1px solid #4f4228;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 6px 20px #0008;
 }
 .lang-dropdown {
   appearance: none;
-  border: 1.5px solid #b1a48a;
+  border: 1.5px solid #82704c;
   border-radius: 6px;
-  background: #f9e7c7;
+  background: #f0d9b5;
   color: #3c2d18;
-  font-size: 0.98em;
-  padding: 6px 25px 6px 14px;
+  font-size: 0.95em;
+  padding: 7px 28px 7px 10px;
   font-family: inherit;
   cursor: pointer;
-  min-width: 68px;
-  box-shadow: 0 1px 3px #0001;
-  transition: border 0.18s;
+  min-width: 168px;
 }
 .lang-dropdown:focus {
   border-color: var(--select-focus);
   outline: none;
 }
-.lang-select-icon {
-  font-size: 1.13em;
-  margin-right: -21px;
-  margin-left: 2px;
-  color: #b1a48a;
-  pointer-events: none;
-  position: relative;
-  left: -22px;
-  top: 1px;
+@media (max-width: 700px) {
+  .lang-switcher {
+    top: 8px;
+    right: 8px;
+  }
+}
+@media (max-width: 600px) {
+  .lang-switcher {
+    top: 6px;
+    right: 6px;
+  }
 }
 .factorio-content {
   border-radius: 0 0 10px 10px;
@@ -438,9 +448,6 @@ textarea:focus {
   .factorio-content {
     padding: 12px 2vw 16px 2vw;
   }
-  .lang-select-container {
-    right: 8px;
-  }
 }
 @media (max-width: 600px) {
   .font-thumb-drop img {
@@ -451,9 +458,5 @@ textarea:focus {
   }
   .factorio-title-block {
     font-size: 1em;
-  }
-  .lang-select-container {
-    right: 5px;
-    top: 6px;
   }
 }
