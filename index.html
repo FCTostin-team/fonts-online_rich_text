@@ -7,26 +7,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="lang-switcher" id="lang-switcher">
+    <button type="button" id="lang-toggle" class="lang-toggle" aria-haspopup="true" aria-expanded="false">Русский</button>
+    <div class="lang-popup" id="lang-popup" hidden>
+      <select id="lang-select" class="lang-dropdown" aria-label="Выбор языка">
+        <option value="ru">Русский</option>
+        <option value="en">English</option>
+        <option value="uk">Українська</option>
+        <option value="kk">Қазақша</option>
+        <option value="cs">Čeština</option>
+        <option value="nl">Nederlands</option>
+        <option value="sv">Svenska</option>
+        <option value="de">Deutsch</option>
+        <option value="pl">Polski</option>
+        <option value="fr">Français</option>
+        <option value="zh">中文</option>
+        <option value="ja">日本語</option>
+      </select>
+    </div>
+  </div>
+
   <div class="factorio-window">
     <div class="factorio-header">
       <span id="header-title">Генератор [font] кода</span>
       <span class="factorio-by" id="header-by">By FCTteam</span>
-      <div class="lang-select-container">
-        <select id="lang-select" class="lang-dropdown" aria-label="Выбор языка">
-          <option value="ru">Русский</option>
-          <option value="en">English</option>
-          <option value="uk">Українська</option>
-          <option value="kk">Қазақша</option>
-          <option value="cs">Čeština</option>
-          <option value="nl">Nederlands</option>
-          <option value="sv">Svenska</option>
-          <option value="de">Deutsch</option>
-          <option value="pl">Polski</option>
-          <option value="fr">Français</option>
-          <option value="zh">中文</option>
-          <option value="ja">日本語</option>
-        </select>
-      </div>
     </div>
     <div class="factorio-content">
       <label class="factorio-label" for="text-input" id="label-text">Текст:</label>
@@ -39,8 +43,7 @@
               <span id="font-btn-label">default-bold</span>
               <span class="font-select-arrow">&#9662;</span>
             </button>
-            <div class="font-dropdown-list" id="font-dropdown-list" role="listbox">
-              </div>
+            <div class="font-dropdown-list" id="font-dropdown-list" role="listbox"></div>
           </div>
         </div>
         <div class="factorio-col">
@@ -52,7 +55,7 @@
       <div class="factorio-title-block" id="code-title">Получившейся код:</div>
       <div class="code-output-container" id="code-visual">
         <span class="code-brackets" id="code-brackets-start">[color=#e04b4b][font=var]</span>
-        <span class="code-maintext" id="code-maintext" style="color:#e04b4b;">Пример текста</span>
+        <span class="code-maintext" id="code-maintext">Пример текста</span>
         <span class="code-end" id="code-brackets-end">[/font][/color]</span>
       </div>
       <span class="code-length" id="code-length">54 / 155</span>
@@ -72,6 +75,18 @@
     <p>Создано при поддержке Телеграм сообщества FCTostin</p>
   </div>
 
+  <script src="profiles/ru.js"></script>
+  <script src="profiles/en.js"></script>
+  <script src="profiles/uk.js"></script>
+  <script src="profiles/kk.js"></script>
+  <script src="profiles/cs.js"></script>
+  <script src="profiles/nl.js"></script>
+  <script src="profiles/sv.js"></script>
+  <script src="profiles/de.js"></script>
+  <script src="profiles/pl.js"></script>
+  <script src="profiles/fr.js"></script>
+  <script src="profiles/zh.js"></script>
+  <script src="profiles/ja.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
