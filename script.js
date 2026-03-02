@@ -39,8 +39,6 @@ const fontBtn = document.getElementById('font-select-btn');
 const fontBtnLabel = document.getElementById('font-btn-label');
 const fontDropdownList = document.getElementById('font-dropdown-list');
 const langSwitcher = document.getElementById('lang-switcher');
-const langToggle = document.getElementById('lang-toggle');
-const langPopup = document.getElementById('lang-popup');
 const langSelect = document.getElementById('lang-select');
 const labelText = document.getElementById('label-text');
 const labelFont = document.getElementById('label-font');
@@ -97,16 +95,6 @@ function closeFontDropdown() {
   fontBtn.setAttribute('aria-expanded', 'false');
 }
 
-function openLangPopup() {
-  langPopup.hidden = false;
-  langToggle.setAttribute('aria-expanded', 'true');
-}
-
-function closeLangPopup() {
-  langPopup.hidden = true;
-  langToggle.setAttribute('aria-expanded', 'false');
-}
-
 function updateCode() {
   const font = selectedFont;
   const color = colorInput.value.toLowerCase();
@@ -145,7 +133,6 @@ function setLang(lang) {
   currentLang = nextLang;
 
   langSelect.value = nextLang;
-  langToggle.textContent = locale.lang;
   headerTitle.textContent = locale.header;
   headerBy.textContent = locale.by;
   labelText.textContent = locale.text;
@@ -187,9 +174,6 @@ document.addEventListener('click', e => {
   if (!fontDropdown.contains(e.target)) {
     closeFontDropdown();
   }
-  if (!langSwitcher.contains(e.target)) {
-    closeLangPopup();
-  }
 });
 
 fontBtn.addEventListener('keydown', e => {
@@ -223,18 +207,8 @@ fontDropdownList.addEventListener('keydown', e => {
   }
 });
 
-langToggle.addEventListener('click', e => {
-  e.stopPropagation();
-  if (langPopup.hidden) {
-    openLangPopup();
-    return;
-  }
-  closeLangPopup();
-});
-
 langSelect.addEventListener('change', function () {
   setLang(this.value);
-  closeLangPopup();
 });
 
 textInput.addEventListener('input', updateCode);
