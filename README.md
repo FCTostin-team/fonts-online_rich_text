@@ -1,12 +1,14 @@
-# FCT Font Generator
+# FCT Font Generator <a href="https://github.com/OstinUA"><img align="right" src="https://img.shields.io/badge/OstinUA-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
 
-> Generate clean, game-ready Factorio Rich Text snippets in seconds — no syntax wrestling, no trial-and-error.
+![Factorio: 2.0+](https://img.shields.io/badge/Factorio-2.0%2B%20%2F%20Space%20Age-orange?style=for-the-badge)
 
-[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge)](LICENSE)
-![Platform: Web](https://img.shields.io/badge/Platform-Web_App-0A0A0A?style=for-the-badge)
-![Stack: HTML/CSS/JS](https://img.shields.io/badge/Stack-HTML%20%7C%20CSS%20%7C%20Vanilla%20JS-E34F26?style=for-the-badge)
-![i18n: 12 languages](https://img.shields.io/badge/i18n-12_Languages-26A5E4?style=for-the-badge)
-![Build: Static](https://img.shields.io/badge/Build-Static_Site-5FCF87?style=for-the-badge)
+![Platform: Web](https://img.shields.io/badge/Platform-Web_App-0ea5e9?style=for-the-badge)
+[![Frontend: Vanilla JS](https://img.shields.io/badge/Frontend-Vanilla%20JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)](script.js)
+[![Styles: CSS3](https://img.shields.io/badge/Styles-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](style.css)
+[![Markup: HTML5](https://img.shields.io/badge/Markup-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](index.html)
+![Status: Active](https://img.shields.io/badge/Status-Active-22c55e?style=for-the-badge)
+![Coverage: Manual](https://img.shields.io/badge/Coverage-Manual%20Validation-lightgrey?style=for-the-badge)
+[![i18n](https://img.shields.io/badge/i18n-multi--language-2ea44f?style=for-the-badge)](#features)
 
 ## Table of Contents
 
@@ -209,3 +211,9 @@ Project created with the support of the FCTostin community.
 
 [![Patreon](https://img.shields.io/badge/Patreon-Support-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/c/OstinFCT)
 [![Boosty](https://img.shields.io/badge/Boosty-Donate-F15F2C?style=for-the-badge&logo=boosty&logoColor=white)](https://boosty.to/ostinfct)
+
+## Contacts
+
+- GitHub: [OstinUA](https://github.com/OstinUA)
+- Team page: [FCTostin-team](https://github.com/FCTostin-team)
+- Contribution process: see [`CONTRIBUTING.md`](CONTRIBUTING.md).
