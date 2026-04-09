@@ -1,231 +1,42 @@
-# Contributing Guide
+# <a href="https://github.com/OstinUA" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/OstinUA/Image-storage/main/Factorio/Gear-silhouette-of-the-Factorio-logo.png" width="32" valign="middle" alt="telegram:FCTostin"></a> Contributing Guide <a href="https://github.com/OstinUA"></a>
 
-First off, thanks for considering a contribution to `FCT Font Generator`.
-If you're here, you're already helping make the tool cleaner, faster, and less painful for everyone generating Factorio rich text.
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-3e80ed?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FCTostin-team)
+[![Open Source](https://img.shields.io/badge/Open_Source-Yes-brightgreen?style=for-the-badge&logo=open-source&logoColor=white)](https://github.com/FCTostin-team)
+[![Views](https://img.shields.io/badge/Profile_Views-%31&#56;%33-blueviolet?style=for-the-badge)](https://github.com/OstinUA)
+[![OstinUA](https://capsule-render.vercel.app/api?type=rect&color=FFA500&height=2&)](https://github.com/OstinUA)
 
-We keep the project intentionally lean: static front-end, zero build drama, and straightforward review flow.
 
-## I Have a Question
+Hello! Thank you for your interest in contributing to this project. I am always open to any help, whether it's fixing bugs, adding new features, improving documentation, or just sharing fresh ideas. 
 
-Please do **not** use GitHub Issues for general usage/support questions.
-Issues are reserved for actionable engineering work (bugs, enhancements, tasks).
+This document is not a strict set of rules, but a simple guide on how we can comfortably and productively work together.
 
-For questions, use community channels:
+## ⬢ How You Can Help
 
-- Telegram chat: https://t.me/FCTostin
-- Steam community group: https://steamcommunity.com/groups/FCTgroup
-- YouTube channel for updates/context: https://www.youtube.com/@FCT-Ostin
+* **Found a bug?** Open an Issue and briefly describe what went wrong and how to reproduce it.
+* **Have a cool idea?** Create an Issue with your proposal. It's always best to discuss an idea first before spending time writing code.
+* **Improving documentation.** Fixing typos, expanding instructions, or translating — absolutely any help is valuable.
+* **Ready to write code?** Feel free to fork the repository and open a Pull Request.
 
-> [!TIP]
-> If your question includes reproducible technical details, there's a high chance it can be converted into a valid bug report or enhancement proposal.
+## ⬢ Pull Request Process
 
-## Reporting Bugs
+The workflow here is as straightforward as possible:
 
-Before opening a new bug report:
+1. Fork this repository.
+2. Create a new branch for your changes (`git checkout -b feature/my-awesome-idea` or `git checkout -b bugfix/issue-123`).
+3. Make your changes and commit them (`git commit -m "Add new awesome feature"`).
+4. Push the changes to your fork (`git push origin feature/my-awesome-idea`).
+5. Open a Pull Request to this repository.
 
-1. Search existing Issues for duplicates.
-2. Re-test on the latest version from `main`.
-3. Confirm it is reproducible with clean browser cache/session.
+## ⬢ A Few Simple Requests
 
-When filing the issue, include:
+* Try to stick to the code style already used in the project.
+* Make your commit messages clear so it's easy to understand what changed.
+* If your Pull Request resolves a specific Issue, mention its number in the description (e.g., `Closes #42`).
+* If the logic changes, please update the relevant section in the README.
 
-- **Environment**
-  - OS and version (e.g. `Windows 11`, `Ubuntu 24.04`)
-  - Browser and version (e.g. `Chrome 126`, `Firefox 128`)
-  - App version/commit hash (`git rev-parse --short HEAD`)
-- **Steps to Reproduce**
-  - Exact click/input sequence.
-  - Include source text, selected font, selected color.
-- **Expected Behavior**
-  - What should have happened.
-- **Actual Behavior**
-  - What actually happened.
-- **Artifacts**
-  - Screenshots, screen recording, console logs.
+## ⬢ Feedback
 
-Minimal bug template:
+I try to review all Issues and Pull Requests as quickly as possible. If I haven't replied in a while, don't hesitate to ping me in the comments.
 
-```md
-### Environment
-- OS:
-- Browser:
-- Commit:
-
-### Steps to Reproduce
-1.
-2.
-3.
-
-### Expected Behavior
-
-### Actual Behavior
-
-### Additional Context
-```
-
-## Suggesting Enhancements
-
-Feature requests are welcome, but keep them sharp and product-driven.
-
-A solid enhancement proposal should include:
-
-- The pain point you are solving.
-- Why current behavior is insufficient.
-- Real use cases (not just hypothetical scenarios).
-- Any UX/API tradeoffs to consider.
-
-Strong proposal format:
-
-```md
-### Problem
-
-### Proposed Solution
-
-### Use Cases
-
-### Potential Tradeoffs
-```
-
-## Local Development / Setup
-
-### 1) Fork and clone
-
-```bash
-# Fork on GitHub first, then:
-git clone https://github.com/<your-username>/fonts-online_rich_text.git
-cd fonts-online_rich_text
-```
-
-### 2) Create a feature branch
-
-```bash
-git checkout -b feature/short-description
-```
-
-### 3) Run locally
-
-```bash
-# Option A: open index.html directly in browser
-
-# Option B: serve as static app (recommended for clipboard API behavior)
-python -m http.server 8080
-# open http://localhost:8080
-```
-
-### 4) Make your changes
-
-Keep edits focused. Avoid drive-by refactors unrelated to your task.
-
-## Pull Request Process
-
-### Branch naming
-
-Use predictable branch prefixes:
-
-- `feature/<short-name>`
-- `bugfix/<short-name-or-issue-id>`
-- `docs/<short-name>`
-- `chore/<short-name>`
-
-Examples:
-
-- `feature/add-font-filter`
-- `bugfix/issue-42-copy-flyout`
-- `docs/readme-refresh`
-
-### Commit messages (Conventional Commits required)
-
-Use Conventional Commit format:
-
-- `feat: add keyboard navigation for font dropdown`
-- `fix: prevent copy action when output is empty`
-- `docs: rewrite setup section in readme`
-- `style: normalize button spacing in toolbar`
-- `refactor: isolate rich text builder function`
-
-### Keep your branch synced
-
-Before opening PR:
-
-```bash
-git fetch upstream
-git rebase upstream/main
-```
-
-If you don't have `upstream` configured:
-
-```bash
-git remote add upstream https://github.com/OstinUA/fonts-online_rich_text.git
-```
-
-### PR description requirements
-
-Every PR should include:
-
-- What changed and why.
-- Link to issue (`Closes #123`) when relevant.
-- Test/verification notes.
-- Screenshots for UI changes.
-- Any known limitations or follow-up tasks.
-
-## Styleguides
-
-### General code style
-
-- Keep the project dependency-free unless there is a very strong reason.
-- Prefer clear, small, pure functions over tangled handlers.
-- Use descriptive naming; avoid cryptic one-letter identifiers.
-- Do not mix unrelated refactors into feature/bugfix PRs.
-
-### Formatting and linting
-
-There is no hard-enforced formatter config in-repo yet.
-Contributors should keep style consistent with existing code in each file.
-
-Recommended local tools (optional but useful):
-
-- `ESLint` for JavaScript sanity checks.
-- `Prettier` for markdown/style consistency.
-
-> [!NOTE]
-> If you introduce project-level lint/format tooling, propose it in a dedicated PR first.
-
-### Architecture conventions
-
-- `index.html` is the UI shell.
-- `style.css` contains all styling concerns.
-- `script.js` owns runtime behavior.
-- `profiles/*.js` are locale dictionaries; keep keys aligned across locales.
-
-## Testing
-
-New behavior should ship with reasonable validation.
-
-At minimum, run a manual smoke test:
-
-1. Text input updates generated output.
-2. Font selection updates tags correctly.
-3. Color picker updates preview and rich text wrapper.
-4. Character limit indicator reacts correctly.
-5. Copy action writes expected string to clipboard.
-6. Locale switching updates all visible labels.
-
-Suggested commands (if toolchain is available in your environment):
-
-```bash
-# Optional static checks
-npx eslint script.js
-npx prettier --check README.md CONTRIBUTING.md
-```
-
-## Code Review Process
-
-- Maintainers review incoming PRs.
-- Expect at least **one approval** before merge.
-- Address reviewer feedback with focused follow-up commits.
-- Resolve conversations explicitly once fixed.
-- Keep discussions technical, concise, and respectful.
-
-If requested changes are unclear, ask for concrete repro steps or examples before pushing another revision.
-
-Thanks again for contributing and helping keep this project sharp.
+The main rule is mutual respect. Welcome, and thank you for your contribution!
+[![OstinUA](https://capsule-render.vercel.app/api?type=rect&color=FFA500&height=2&)](https://github.com/OstinUA)
